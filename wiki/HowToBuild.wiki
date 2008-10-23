@@ -16,7 +16,7 @@ You also have to get Nginx source code of course. Download a latest archive from
 
 ngx_v8 source code is hosted on this site. ngx_v8 has only two files: "config" and "ngx_http_v8_module.cc". "config" is a file containing module build information to tell Nginx that it is a module for you. In this file, you need to specify the location of V8. Change the path from my one to your one.
 
-At last, you are in build stage. Like always move Nginx directory, configure, make, make install as follows. At this time, you have to specify the path to ngx_v8 directory containing "config" and "ngx_http_v8_module.cc" using configure's "--add-module" parameter. 
+At last, you are in build stage. Like always move Nginx directory, configure, make, and make install as follows. At this time, you have to specify the path to ngx_v8 directory containing "config" and "ngx_http_v8_module.cc" using configure's "--add-module" parameter. 
 {{{
 $ cd ${NGINX_SRC}
 $ ./configure --prefix=/path/to/installation --add-module=/path/to/ngx_v8
