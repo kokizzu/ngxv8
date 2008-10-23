@@ -1,0 +1,25 @@
+#summary One-sentence summary of this page.
+This page instructs how to build ngx_v8 module and embed it to Nginx.
+
+= Step 1 : Getting V8 =
+
+You first need to fetch [http://code.google.com/p/v8/ V8 JavaScript Engine] source code and build the library. The V8 project site describes how to do this.
+
+When you finished up the build, you will get the library named "libv8.so" which will be linked from ngx_v8.
+
+
+= Step 2: Getting Nginx =
+
+You also have to get Nginx source code of course. Download a latest archive from the [http://nginx.net/ Officeal Site].
+
+
+= Step 3: Getting ngx_v8 =
+
+ngx_v8 source code is hosted on this site. ngx_v8 has only two files: "config" and "ngx_http_v8_module.cc". "config" is a file containing module build information to tell Nginx that it is a module for you. In this file, you need to specify the location of V8. Change the path from my one to your one.
+
+At last, you are in build stage. Like always move Nginx directory, configure, make, make install as follows. At this time, you have to specify the path to ngx_v8 directory containing "config" and "ngx_http_v8_module.cc" using configure's "--add-module" parameter. 
+{{{
+$ cd ${NGINX_SRC}
+$ ./configure --prefix=/path/to/installation --add-module=/path/to/ngx_v8
+$ make
+$ make install
