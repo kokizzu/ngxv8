@@ -2,7 +2,7 @@ This page instructs how to build ngx_v8 module and embed it to Nginx.
 
 = Step 1 : Getting V8 =
 
-You first need to fetch [http://code.google.com/p/v8/ V8 JavaScript Engine] source code and build the library. The V8 project site describes how to do this.
+At the beginning, You need to get[http://code.google.com/p/v8/ V8 JavaScript Engine] the V8 source code and build it. You can find the instruction to do at the V8 project site.
 
 When you finished up the build, you will get the library named "libv8.so" which will be linked from ngx_v8.
 
