@@ -1,3 +1,5 @@
+#summary This page instructs how to build ngx_v8 module and embed it to Nginx.
+
 This page instructs how to build ngx_v8 module and embed it to Nginx.
 
 = Step 1 : Getting V8 =
