@@ -11,6 +11,8 @@ After the build process is succeeded, you would get the library named "libv8.so"
 
 You also have to get Nginx source code of course. Download a latest archive from the [http://nginx.net/ Officeal Site].
 
+*I confirmed nginx-0.8.x on x86_64 does not works due to some problem.* http://code.google.com/p/ngxv8/issues/detail?id=1 Thanks to ihanick.
+
 
 = Step 3: Getting ngx_v8 =
 
